@@ -1,5 +1,7 @@
 package com.agriono.data.model;
 
+import lombok.AllArgsConstructor;
+import lombok.Builder;
 import lombok.Data;
 import lombok.NoArgsConstructor;
 import org.hibernate.annotations.CreationTimestamp;
@@ -14,6 +16,8 @@ import java.util.List;
 @Data
 @Entity
 @NoArgsConstructor
+@Builder
+@AllArgsConstructor
 public class User {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
@@ -43,6 +47,11 @@ public class User {
         this.enabled = false;
 
     }
+
+//    public User(String email) {
+//        this.email = email;
+//    }
+
     public void addUserType(UserType userType){
         if(this.userTypes == null){
             this.userTypes = new ArrayList<>();
