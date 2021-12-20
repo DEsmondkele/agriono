@@ -40,6 +40,9 @@ public class User {
     @OneToMany(cascade = CascadeType.PERSIST)
     private List<UserType> userTypes;
 
+    @OneToMany
+    private List<Comment> comments;
+
     public User( String email, String password, UserType userType){
         this.email = email;
         this.password = password;
@@ -48,9 +51,9 @@ public class User {
 
     }
 
-//    public User(String email) {
-//        this.email = email;
-//    }
+    public User(String email) {
+        this.email = email;
+    }
 
     public void addUserType(UserType userType){
         if(this.userTypes == null){
