@@ -1,6 +1,8 @@
 package com.agriono.services;
 
+import com.agriono.data.dto.CommentDto;
 import com.agriono.data.dto.InfoBlogDto;
+import com.agriono.data.dto.PlantAlbumDto;
 import com.agriono.data.dto.ResearcherDto;
 import com.agriono.data.model.*;
 import com.agriono.data.repository.InfoBlogRepository;
@@ -67,6 +69,26 @@ InfoBlog infoBlog = InfoBlog.builder()
         if(Objects.equals(infoBlogDto.getId(), id)){
 
         }
+        return null;
+    }
+
+    @Override
+    public Comment createComment(CommentDto commentDto) {
+        return null;
+    }
+
+    @Override
+    public void deleteComment(Long id) {
+
+    }
+
+    @Override
+    public PlantAlbum createPlantAlbum(PlantAlbumDto plantAlbumDto) {
+        return null;
+    }
+
+    @Override
+    public PlantAlbum updatePlantAlbum(PlantAlbumDto plantAlbumDto) {
         return null;
     }
 

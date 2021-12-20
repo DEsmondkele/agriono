@@ -8,6 +8,7 @@ import org.hibernate.annotations.CreationTimestamp;
 
 import javax.persistence.*;
 import java.time.LocalDateTime;
+import java.util.List;
 
 @Data
 @Entity
@@ -34,4 +35,7 @@ public class InfoBlog {
 
     @ManyToOne
     private  Researcher researcher;
+
+    @OneToMany
+    private List<Comment> comments;
 }

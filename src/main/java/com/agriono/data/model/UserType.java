@@ -1,5 +1,6 @@
 package com.agriono.data.model;
 
+import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.NoArgsConstructor;
 
@@ -8,6 +9,7 @@ import javax.persistence.*;
 @Data
 @Entity
 @NoArgsConstructor
+@AllArgsConstructor
 public class UserType {
 
     @Id
@@ -22,4 +24,6 @@ public class UserType {
         this.type = type;
     }
 
+    public UserType(String email) {
+    }
 }

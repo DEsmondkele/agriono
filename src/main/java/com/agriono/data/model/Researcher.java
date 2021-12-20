@@ -36,4 +36,5 @@ public class Researcher {
 
     @OneToMany
     private List<InfoBlog> infoBlogs;
+
 }

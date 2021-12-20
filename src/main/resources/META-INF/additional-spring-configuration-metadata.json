@@ -1,0 +1,18 @@
+{
+  "properties": [
+    {
+      "name": "account_sid",
+      "type": "java.lang.String",
+      "description": "Description for account_sid."
+    },
+    {
+      "name": "auth_token",
+      "type": "java.lang.String",
+      "description": "Description for auth_token."
+    },
+    {
+      "name": "user_name",
+      "type": "java.lang.String",
+      "description": "Description for user_name."
+    }
+  ] }
